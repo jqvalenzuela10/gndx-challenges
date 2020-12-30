@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --topbg-color: hsl(225, 100%, 98%);
+    --text1-color: hsl(230, 17%, 14%);
+    --text2-color: hsl(228, 12%, 44%);
+}
+body{
+    margin:0;
+    font-family: 'Inter', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

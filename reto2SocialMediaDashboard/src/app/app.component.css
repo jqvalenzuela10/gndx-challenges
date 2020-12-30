@@ -1,0 +1,236 @@
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  .switch{
+      height: 28px;
+      width: 52px;
+      display: block;
+      border-radius: 25px;
+      background: hsl(230, 22%, 74%);;
+     
+      padding: 5px;
+      box-sizing: border-box;
+      cursor: pointer;
+  }
+  .switch::before{
+      content:"";
+      display: block;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      transition:transform 0.3s, background-color 0.3s;
+      transform: translateX(0px); 
+      border-radius: 50%; 
+      
+  }
+  .checkbox{
+      display: none;
+  }
+  .checkbox:checked ~ .switch{
+     background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));;
+ 
+  }
+  .checkbox:checked ~ .switch::before{
+    background: hsl(230, 17%, 14%);
+    transition:transform 0.3s, background-color 0.3s;
+    transform: translateX(25px);
+ }
+.header{
+    background-color: var(--topbg-color);
+    padding: 0px 30px 70px 30px;
+    
+}
+.header .title{
+    font-size: 1.72em;
+    color:var(--text1-color);
+    padding-top: 30px;
+}
+.header .followers{
+    color:var(--text2-color);
+    font-weight: bold;
+    font-size: 14px;
+    padding:5px 0px 30px 0px;
+}
+.btn-dark-mode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.btn-dark-mode .title-dark-mode{
+    font-size: 14px;
+    transition: color 0.3s;
+    color:var(--text2-color)
+}
+
+.section{
+    padding: 0px 65px;
+    margin-top: -60px;
+  
+}
+
+.section article{
+    margin: 25px auto;
+}
+.section2{
+    margin-top: 5px;
+    padding: 0px 65px;
+    margin:0 auto;
+}
+.not-grid-title{
+    margin: 40px 0px 20px 30px;
+    color: var(--text2-color);
+}
+.section2 article{
+    margin: 20px auto;
+   padding: 20px 30px;
+    max-height: 125px;
+    min-width: 350px;
+}
+
+.article-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 125px;
+    max-width: 350px;
+    background: #f0f3fa
+}
+.article-grid span{
+    font-weight: 700;
+    line-height: 1.7em;
+    font-size: 0.97em;
+    color: var(--text2-color);
+}
+.article-grid strong{
+ 
+    font-size: 2.25em;
+    align-self: end;
+}
+.article-grid img{
+    justify-self: end;
+}
+.article-grid .article-grid-porcentaje{
+    justify-self: end;
+    align-self:end;
+    
+}
+.article-grid .article-grid-porcentaje span{
+    color:#1db489;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+.card{
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f0f3fa;
+    text-align: center;
+    margin:0px 0px 25px 0px;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+#card-1:before{
+    content:"";
+    height: 4px;
+    display: block;
+    background: #198ff5;
+}
+#card-2:before{
+    content:"";
+    height: 4px;
+    display: block;
+    background: #1ca0f2;
+}
+#card-3:before{
+    content:"";
+    height: 4px;
+    display: block;
+    background-image: linear-gradient(to right, #fdc468, #df4996);
+}
+#card-4:before{
+    content:"";
+    height: 4px;
+    display: block;
+    background: #c4032a;
+}
+.card-number{
+    font-size: 3.75em;
+
+}
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85em;
+    color:var(--text2-color);
+    padding: 23px 0;
+    
+}
+.card-header strong{
+    margin-left:5px;
+    
+    
+}
+.card-followers{
+    display: block;
+    letter-spacing: 0.35em;
+    font-size: 0.9em;
+    color: var(--text2-color);
+    text-transform:uppercase; 
+}
+.card-footer{
+    padding: 23px 0;
+    color:#1db489;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+@media (min-width: 768px) { 
+
+    .section2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+       
+    }
+    .section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+
+
+
+
+@media (min-width: 1600px) { 
+
+    .section2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+       
+    }
+    .section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+    .wrapper .btn-dark-mode{
+        align-self: center;
+    }
+}
